@@ -13,6 +13,7 @@ void draw()
   
   wall.render();
   player.render();
+  wall.update();
   
 }
 

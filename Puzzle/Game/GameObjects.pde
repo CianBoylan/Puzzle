@@ -1,6 +1,7 @@
 class GameObjects
 {
-  float bx =
+  float bx = 425;
+  float by = 50;
   float y = 0;
   float x = 475;
   float recH = 1000;
@@ -10,6 +11,7 @@ class GameObjects
   
   public void update()
   {
+   
   }
   
   public void render()

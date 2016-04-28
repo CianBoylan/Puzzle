@@ -3,8 +3,11 @@ class level extends GameObjects
   
   void update()
   {
-    
-    
+    if (px + 50 >= bx - 25 && px + 50 <= bx + 25)
+    {
+      recH = 800;
+    }
+     
   }
   
   
@@ -16,7 +19,8 @@ class level extends GameObjects
     
     noStroke();
     fill(0,255,0);
-    ellipse (
+    ellipse (bx,by,50,50);
+     
   }
   
 }
