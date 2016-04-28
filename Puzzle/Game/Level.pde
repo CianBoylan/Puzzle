@@ -10,7 +10,13 @@ class level extends GameObjects
   
   void render()
   {
-    stroke(255);
-    line(x,0,x,y);
+    stroke(255,0,0);
+    fill(255,0,0);
+    rect(x,y,recW,recH);
+    
+    noStroke();
+    fill(0,255,0);
+    ellipse (
   }
+  
 }

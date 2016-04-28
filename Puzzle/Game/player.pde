@@ -8,12 +8,13 @@ class player extends GameObjects
   {
      if (key ==CODED)
     {
-      if( keyCode == RIGHT )
+      if( keyCode == RIGHT && (px + 50 < x || px + 50 > x + recW) )
       { 
         px += 8;
       }
       
-      else if (keyCode == LEFT )
+      
+      if (keyCode == LEFT )
       { 
         px -= 8;
       } 
@@ -22,7 +23,7 @@ class player extends GameObjects
         py -= 8;
       }
       
-      else if (keyCode == DOWN )
+      if (keyCode == DOWN )
       { 
         py += 8;
       }
@@ -32,7 +33,8 @@ class player extends GameObjects
   void render()
   {
     
-    
+    noStroke();
+    fill(255);
     ellipse(px,py,100,100);
     
      
