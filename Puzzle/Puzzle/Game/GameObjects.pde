@@ -8,6 +8,9 @@ class gameObjects
   float recW = 50;
   float px = 50;
   float py = 500;
+  float h = y + recH;
+  float w = x + recW;
+  float l = 1;
   
   public void update()
   {
