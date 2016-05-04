@@ -11,6 +11,8 @@ class gameObjects
   float h = y + recH;
   float w = x + recW;
   float l = 1;
+  float nx = 900;
+  float ny = 900;
   
   public void update()
   {

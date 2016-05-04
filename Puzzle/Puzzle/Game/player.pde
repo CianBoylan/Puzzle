@@ -14,6 +14,13 @@ class player extends gameObjects
       recH = 800;
     } 
     
+     if  (px + 50 >= nx && px + 50 <= nx + 50 && py -50 >= ny && py - 50 <= ny + 50 )
+    {
+      l ++;
+    
+      
+    } 
+    
     
      //player
    if (key ==CODED)
@@ -96,10 +103,42 @@ class player extends gameObjects
      stroke(255,0,0);
     fill(255,0,0);
     rect(x,y,recW,recH);
+    
+    //next level 
+    noStroke();
+    fill(0,0,255);
+    rect (nx,ny,50,50);
+    
     }
     
     if (l == 2)
     {
+      
+      nx = 100;
+      ny = 100;
+      bx = 100;
+      by = 900;
+      x = 0;
+      y = 300;
+      recH = 30;
+      recW = width;
+      
+       //button
+    noStroke();
+    fill(0,255,0);
+    rect (bx,by,50,50);
+    
+    //next level 
+    noStroke();
+    fill(0,0,255);
+    rect (nx,ny,50,50);
+    
+    //level
+     stroke(255,0,0);
+    fill(255,0,0);
+    rect(x,y,recW,recH);
+    
+    
       
     }
    
