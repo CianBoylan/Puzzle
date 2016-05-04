@@ -1,6 +1,7 @@
-class level extends gameObjects
+class level extends player
 {
   
+ float recH = 1000;
   
   void update()
   {
@@ -12,10 +13,7 @@ class level extends gameObjects
   
   void render()
   {
-    stroke(255,0,0);
-    fill(255,0,0);
-    rect(x,y,recW,recH);
-    
+   
     
      
   }
